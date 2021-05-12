@@ -170,13 +170,14 @@ Component
                                 bsqr.backgroundColor= "#0062cc"
                                 if(cletter.text.toLowerCase() === dataModel.content["correct"])
                                 {
-
+                                    ++dataModel.correct
                                     csqr.backgroundColor = "green"
                                     next.visible= true
                                     asqr.enabled = false
                                     bsqr.enabled = false
                                 }
                                 else{
+                                    ++dataModel.wrong
                                     csqr.backgroundColor = "red"
                                 }
                             }
